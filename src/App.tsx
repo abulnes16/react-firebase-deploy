@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>Counter app</h1>
-      <p className="counter-title">El contador es: </p>
+      <p className="counter-title">El contador es </p>
       <p className="counter">{counter}</p>
       <div className="fab-container">
         <Fab
