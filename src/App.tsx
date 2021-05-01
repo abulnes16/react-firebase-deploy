@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import { Fab } from "./components/Fab/Fab";
 
 function App() {
+  const [counter, setCounter] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Counter app</h1>
+      <p className="counter-title">El contador es: </p>
+      <p className="counter">{counter}</p>
+      <div className="fab-container">
+        <Fab
+          text="-1"
+          onClick={() => {
+            setCounter(counter - 1);
+          }}
+        />
+        <Fab
+          text="+1"
+          onClick={() => {
+            setCounter(counter + 1);
+          }}
+        />
+      </div>
     </div>
   );
 }

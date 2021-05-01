@@ -1,0 +1,24 @@
+.fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #61dafb;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 0 20px;
+  font-size: 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3ms ease;
+}
+
+.fab:hover {
+  background-color: #58c8e7;
+}
+
+.fab:active {
+  transform: scale(0.9);
+}
